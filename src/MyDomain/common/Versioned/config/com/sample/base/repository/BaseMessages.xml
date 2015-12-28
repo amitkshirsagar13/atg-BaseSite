@@ -7,7 +7,7 @@
 	</header>
 	<item-descriptor name="messageRepository" expert="false"
 		writable="true" cache-mode="simple" default="true" query-cache-size="1000"
-		hidden="false" item-cache-size="1000" display-property="keyValue"
+		hidden="false" item-cache-size="1000" display-property="message_key"
 		display-name-resource="Base Error Message">
 		<table name="atg_messages" type="primary" id-column-names="id">
 		
