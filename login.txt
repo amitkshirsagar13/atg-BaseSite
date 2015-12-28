@@ -3,6 +3,8 @@ atg-amogh123
 jboss-admin:Amogh*123/weblogic1(fly)
 
 
+
+
 C:\opt\JBoss\wildfly-8.2.0.Final\modules\com\oracle\jdbc\main\ojdbc6.jar
 Merchandising User (login: merchandising): merchandising:Admin123
 Acer BCC: Publishing Admin User (login: admin): admin:Admin123
