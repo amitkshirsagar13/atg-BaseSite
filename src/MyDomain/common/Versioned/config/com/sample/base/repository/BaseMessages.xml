@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template SYSTEM "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>My Sample Message Repository</name>
+		<author>Amit Kshirsagar</author>
+	</header>
+	<item-descriptor name="messageRepository" expert="false"
+		writable="true" cache-mode="simple" default="true" query-cache-size="1000"
+		hidden="false" item-cache-size="1000" display-property="message_key"
+		display-name-resource="Base Error Message">
+		<table name="atg_messages" type="primary" id-column-names="id">
+		
+		
+			<property name="ASSET_VERSION" data-types="int" />
+			<property name="WORKSPACE_ID" data-types="String" />
+			<property name="BRANCH_ID" data-types="String" />
+			<property name="IS_HEAD" data-types="int" />
+			<property name="VERSION_DELETED" data-types="int" />
+			<property name="VERSION_EDITABLE" data-types="int" />
+			<property name="PRED_VERSION" data-types="int" />
+			<property name="CHECKIN_DATE" data-types="timestamp" />
+		
+			<!-- properties that may (or may not) be used as primary keys -->
+			<property name="application" data-types="String" />
+			<property name="msglevel" data-types="String" />
+			<property name="message_key" data-types="String" />
+			<property name="message" data-types="String" />
+			<property name="status" data-types="int" />
+		</table>
+	</item-descriptor>
+</gsa-template>
