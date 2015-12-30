@@ -7,12 +7,15 @@
 <browse-hierarchy xml-combine="append">
 
 	<browse-item id="home" xml-combine="append">
-		<browse-item reference-id="messageRepository" />
+		<browse-item id="MyDomainMessages" label-resource="node.MyDomainMessages.label"
+			is-root="true" icon-resource="">
+			<browse-item reference-id="messageRepository" />
+		</browse-item>
 	</browse-item>
 
 	<browse-item id="messageRepository" label-resource="node.messageRepository.label"
-		is-root="true" icon-resource="node.messageRepository.iconSmall">
-		<list-definition id="allServiceFee" retriever="query"
+		is-root="false" icon-resource="">
+		<list-definition id="messageRepository" retriever="query"
 			child-type="/com/sample/base/repository/BaseMessageRepository:messageRepository">
 			<retriever-parameter name="query" value="ALL" />
 		</list-definition>
