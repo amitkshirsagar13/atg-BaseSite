@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- CRS customizations for merchandising find configuration -->
+
+<find-configuration site-filtering="true">
+
+	<asset-family id="messageRepository" site-filtering="false">
+
+		<display-name-resource>node.messageRepository.label
+		</display-name-resource>
+		<enable-default-query>true</enable-default-query>
+		<enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+		<default-asset-type>messageRepository</default-asset-type>
+
+		<asset-type id="messageRepository" site-filtering="false">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/sample/base/repository/BaseMessageRepository
+			</repository-path>
+			<repository-item-type>messageRepository</repository-item-type>
+		</asset-type>
+
+	</asset-family>
+
+
+</find-configuration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE browse-hierarchy
+  PUBLIC "-//Art Technology Group, Inc.//DTD Asset Manager Browse Hierarchy//EN"
+  'http://www.atg.com/dtds/browse-hierarchy/browse-hierarchy_1.0.dtd'>
+
+<browse-hierarchy xml-combine="append">
+
+	<browse-item id="home" xml-combine="append">
+		<browse-item reference-id="messageRepository" />
+	</browse-item>
+
+	<browse-item id="messageRepository" label-resource="node.messageRepository.label"
+		is-root="true" icon-resource="node.messageRepository.iconSmall">
+		<list-definition id="allServiceFee" retriever="query"
+			child-type="/com/sample/base/repository/BaseMessageRepository:messageRepository">
+			<retriever-parameter name="query" value="ALL" />
+		</list-definition>
+	</browse-item>
+
+</browse-hierarchy>
