@@ -2,9 +2,10 @@ bin/
 class/
 gen-src/
 gen-classes/
-class/
-gen-classes/
-gen-src/
+classes/
+lib/classes.jar
+lib/gen-classes.jar
+lib/gen-dto-classes.jar
 **/lib/classes.jar
 **/lib/gen-classes.jar
 **/lib/gen-dto-classes.jar
