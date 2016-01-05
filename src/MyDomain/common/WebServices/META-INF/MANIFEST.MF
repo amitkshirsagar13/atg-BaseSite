@@ -9,6 +9,6 @@ ATG-Class-Path: lib/classes.jar lib/gen-classes.jar lib/gen-dto-classes.jar lib/
  lib/jsr173_1.0_api.jar lib/javax.ws.rs-api-2.0.1.jar lib/jersey-client-2.19.jar 
  lib/jersey-common-2.19.jar  lib/axiom.jar
 ATG-Client-Class-Path: lib/classes.jar lib/gen-classes.jar lib/gen-dto-classes.jar
-ATG-Required: 
+ATG-Required: DAF DafEar.Admin DAS DCS DCS-UI DPS
 Name: lib/classes.jar
 ATG-Client-Update-Path: true

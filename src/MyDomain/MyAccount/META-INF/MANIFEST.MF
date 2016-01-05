@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 ATG-Config-Path: config/
 ATG-Class-Path: lib/classes.jar lib/jdbc/ojdbc6.jar lib/json/gson-2.2.4.jar
 ATG-Client-Class-Path: lib/classes.jar
-ATG-Required: MyDomain.common PublishingAgent
+ATG-Required: PublishingAgent MyDomain.common
 ATG-Required-If-Present: SiteAdmin.Versioned
 ATG-J2EE: j2ee-apps/MyAccount
 ATG-EAR-Module: j2ee-apps/MyAccount
