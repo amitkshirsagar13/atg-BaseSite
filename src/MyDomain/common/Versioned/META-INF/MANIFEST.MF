@@ -6,5 +6,5 @@ ATG-Class-Path: lib/classes.jar lib/prepend/guava-18.0.jar lib/prepend/jackson
  is2-1.6.2/lib/axis2-kernel-1.6.2.jar pkgdep/axis2-1.6.2/lib/httpcore-4.0.jar 
  lib/atg-rest-client-1.0.jar
 ATG-Client-Class-Path: lib/classes.jar lib/guava-18.0.jar
-ATG-Required: MyDomain.common
+ATG-Required: MyDomain.common DCS.Versioned DCS-UI.SiteAdmin.Versioned
 ATG-Client-Update-Path: true
