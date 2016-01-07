@@ -103,11 +103,18 @@
 			<exclude name="testclasses.jar" />
 		</fileset>
 	</path>
+	<path id="common.classpath">
+			<fileset dir="${basedir}/src/MyDomain/common/lib">
+				<include name="*.jar" />
+				<exclude name="testclasses.jar" />
+			</fileset>
+		</path>
 
 	<!-- Consolidated CLASSPATH -->
 	<path id="java.classpath">
 		<pathelement path="${env.CLASSPATH}" />
 		<path refid="dynamo.classpath" />
+		<path refid="common.classpath" />
 		<path refid="web.services.classpath" />
 		<path refid="axis2.classpath" />
 		<path refid="wadl2java.classpath" />
