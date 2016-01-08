@@ -20,7 +20,7 @@
 			bean="BaseCartModifierFormHandler.catalogRefIds" />
 		<br />
 		<dsp:input type="hidden" id="itemQtyHid"
-			bean="BaseCartModifierFormHandler.items[0].quantity" value="1" />
+			bean="BaseCartModifierFormHandler.quantity" value="1" />
 		<dsp:input type="submit"
 			bean="BaseCartModifierFormHandler.removeAndAddItemToOrder" />
 	</dsp:form>
