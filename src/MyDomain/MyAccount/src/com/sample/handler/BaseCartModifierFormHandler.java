@@ -13,7 +13,25 @@ import atg.droplet.DropletException;
 import atg.servlet.DynamoHttpServletRequest;
 import atg.servlet.DynamoHttpServletResponse;
 import atg.userprofiling.Profile;
-
+/**
+ * 
+ * <p>
+ * <b>Overview:</b>
+ * <p>
+ * 
+ * 
+ * <pre>
+ * @projectName BaseSite
+ * Creation date: Jan 7, 2016
+ * @author Amit Kshirsagar
+ * @version 1.0
+ * @since
+ * 
+ * <p><b>Modification History:</b><p>
+ * 
+ * 
+ * </pre>
+ */
 public class BaseCartModifierFormHandler extends CartModifierFormHandler {
 	/**
 	 * profile
