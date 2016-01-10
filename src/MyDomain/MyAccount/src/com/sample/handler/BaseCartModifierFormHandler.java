@@ -72,8 +72,7 @@ public class BaseCartModifierFormHandler extends CartModifierFormHandler {
 	@Override
 	public boolean handleRemoveAndAddItemToOrder(DynamoHttpServletRequest pRequest, DynamoHttpServletResponse pResponse)
 			throws ServletException, IOException {
-		// logInfo("Add Items: " + getItems()[0].getProductId() + " || " +
-		// getItems()[0].getCatalogRefId());
+		logInfo("Add Items: " + getProductIds() + " || " + getCatalogRefIds() + "++" + getQuantity());
 		super.handleRemoveAndAddItemToOrder(pRequest, pResponse);
 		for (CommerceItem commerceItem : (List<CommerceItem>) getOrder().getCommerceItems()) {
 			logInfo(commerceItem.getId() + "|" + commerceItem.getCatalogId() + "|" + getProductId());
