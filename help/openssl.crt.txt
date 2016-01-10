@@ -1,0 +1,11 @@
+openssl genrsa -des3 -out ../conf/localhost.basesite.org.key 1024
+
+openssl rsa -in ../conf/localhost.basesite.org.key -out ../conf/localhost.basesite.org2.key
+
+openssl req -new -key ../conf/localhost.basesite.org.key -out ../conf/localhost.basesite.org.csr
+
+openssl x509 -req -days 365 -in ../conf/localhost.basesite.org.csr -signkey ../conf/localhost.basesite.org.key -out ../conf/localhost.basesite.org.crt
+
+set OPENSSL_CONF=/opt/apache24/conf/openssl.cnf
+
+localhost.basesite.org
