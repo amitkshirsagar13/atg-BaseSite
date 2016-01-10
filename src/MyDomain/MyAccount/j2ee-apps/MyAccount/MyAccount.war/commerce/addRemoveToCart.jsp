@@ -13,14 +13,16 @@
 	<h3>Add Item</h3>
 	<dsp:form formid="removeItemFromCart" id="removeItemFromCart"
 		method="POST">
+		<br />
+		<dsp:setvalue bean="BaseCartModifierFormHandler.addItemCount" value="1"/>
 		<dsp:input type="text" id="itemProdIdHid"
-			bean="BaseCartModifierFormHandler.productIds" />
+			bean="BaseCartModifierFormHandler.items[0].productId" />
 		<br />
 		<dsp:input type="text" id="itemSkuIdHid"
-			bean="BaseCartModifierFormHandler.catalogRefIds" />
+			bean="BaseCartModifierFormHandler.items[0].catalogRefId" />
 		<br />
 		<dsp:input type="hidden" id="itemQtyHid"
-			bean="BaseCartModifierFormHandler.quantity" value="1" />
+			bean="BaseCartModifierFormHandler.items[0].quantity" value="1" />
 		<dsp:input type="submit"
 			bean="BaseCartModifierFormHandler.removeAndAddItemToOrder" />
 	</dsp:form>

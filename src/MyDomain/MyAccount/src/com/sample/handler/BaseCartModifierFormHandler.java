@@ -13,6 +13,7 @@ import atg.droplet.DropletException;
 import atg.servlet.DynamoHttpServletRequest;
 import atg.servlet.DynamoHttpServletResponse;
 import atg.userprofiling.Profile;
+
 /**
  * 
  * <p>
@@ -21,11 +22,11 @@ import atg.userprofiling.Profile;
  * 
  * 
  * <pre>
- * @projectName BaseSite
+ * &#64;projectName BaseSite
  * Creation date: Jan 7, 2016
- * @author Amit Kshirsagar
- * @version 1.0
- * @since
+ * &#64;author Amit Kshirsagar
+ * &#64;version 1.0
+ * &#64;since
  * 
  * <p><b>Modification History:</b><p>
  * 
@@ -72,10 +73,12 @@ public class BaseCartModifierFormHandler extends CartModifierFormHandler {
 	@Override
 	public boolean handleRemoveAndAddItemToOrder(DynamoHttpServletRequest pRequest, DynamoHttpServletResponse pResponse)
 			throws ServletException, IOException {
+		// getOrder().removeAllCommerceItems();
 		logInfo("Add Items: " + getProductIds() + " || " + getCatalogRefIds() + "++" + getQuantity());
 		super.handleRemoveAndAddItemToOrder(pRequest, pResponse);
 		for (CommerceItem commerceItem : (List<CommerceItem>) getOrder().getCommerceItems()) {
-			logInfo(commerceItem.getId() + "|" + commerceItem.getCatalogId() + "|" + getProductId());
+			logInfo(commerceItem.getId() + "|" + commerceItem.getCatalogId() + "|" + getProductId() + "||"
+					+ commerceItem.getAuxiliaryData().getCatalogRef());
 		}
 		return checkFormRedirect(null, null, pRequest, pResponse);
 	}
